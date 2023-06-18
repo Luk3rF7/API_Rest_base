@@ -10,7 +10,7 @@ export default class Aluno extends Model {
         nome: {
           // config para validação
           type: Sequelize.STRING,
-          deafaultValue: '',
+          defaultValue: '',
           validate: {
             len: {
               args: [3, 255],
