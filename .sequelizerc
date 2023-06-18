@@ -1,0 +1,11 @@
+// === imports ===
+const { resolve } = require('path');
+
+// === config do caminhos sequilize ===
+module.exports = {
+      // === settings ===
+  config: resolve(__dirname,'src','config','database.js'),
+  'models-path': resolve(__dirname,'src','models'),
+  'migrations-path': resolve(__dirname,'src','database','migrations'), //migrations - pre-save dos dados
+  'seeders-path': resolve(__dirname,'src','database','seeds')
+};
